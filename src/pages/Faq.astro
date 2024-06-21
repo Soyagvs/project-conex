@@ -1,0 +1,190 @@
+---
+import { Image } from "astro:assets";
+import Layout from "../layouts/Layout.astro";
+import bgImage from "../assets/img/estandar/img-hero-max.webp";
+---
+
+<Layout title="Welcome to FAQ">
+    <main class="flex flex-col justify-center z-10 mt-20 items-center">
+        <Image
+            src={bgImage}
+            alt="image the bsolute"
+            class="absolute -z-10 opacity-50 pt-20"
+        />
+
+        <div class="text-center space-y-4">
+            <p class="text-[#80ED99]">frequent questions</p>
+            <h2 class="font-semibold text-4xl">FAQ</h2>
+            <p class="text-[#667085]">
+                Everything you need to know about the product and billing.
+            </p>
+        </div>
+
+        <div
+            class="hs-accordion-group flex flex-col justify-center max-w-[800px] mx-4 mt-20"
+        >
+            <div
+                class="hs-accordion hs-accordion-active:border-gray-200 border border-transparent rounded-xl bg-white"
+                id="hs-active-bordered-heading-one"
+            >
+                <button
+                    class="hs-accordion-toggle inline-flex justify-between items-center gap-x-3 w-full font-semibold text-start py-4 px-5 hover:text-gray-500 disabled:opacity-50 disabled:pointer-events-none dark:hs-accordion-active:text-[#7F56D9] dark:hover:text-neutral-400 dark:focus:outline-none text-[#80ED99]"
+                    aria-controls="hs-basic-active-bordered-collapse-one"
+                >
+                    what is the objective of CONEX ?
+                    <svg
+                        class="hs-accordion-active:hidden block size-3.5"
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                    >
+                        <path d="M5 12h14"></path>
+                        <path d="M12 5v14"></path>
+                    </svg>
+                    <svg
+                        class="hs-accordion-active:block hidden size-3.5"
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                    >
+                        <path d="M5 12h14"></path>
+                    </svg>
+                </button>
+                <div
+                    id="hs-basic-active-bordered-collapse-one"
+                    class="hs-accordion-content hidden overflow-hidden transition-[height] duration-300"
+                    aria-labelledby="hs-active-bordered-heading-one"
+                >
+                    <div class="pb-4 px-5">
+                        <p class="text-[#667085]">
+                            The objective of CONEX is to form the platform where
+                            the most outstanding web developers on the planet
+                            are.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div
+                class="hs-accordion hs-accordion-active:border-gray-200 active bg-white border border-transparent rounded-xl"
+                id="hs-active-bordered-heading-two"
+            >
+                <button
+                    class="hs-accordion-toggle inline-flex justify-between items-center gap-x-3 w-full font-semibold text-start py-4 px-5 hover:text-gray-500 disabled:opacity-50 disabled:pointer-events-none dark:hs-accordion-active:text-[#7F56D9] dark:hover:text-neutral-400 dark:focus:outline-none text-[#80ED99]"
+                    aria-controls="hs-basic-active-bordered-collapse-two"
+                >
+                    who is the founder of CONEX
+                    <svg
+                        class="hs-accordion-active:hidden block size-3.5"
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                    >
+                        <path d="M5 12h14"></path>
+                        <path d="M12 5v14"></path>
+                    </svg>
+                    <svg
+                        class="hs-accordion-active:block hidden size-3.5"
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                    >
+                        <path d="M5 12h14"></path>
+                    </svg>
+                </button>
+                <div
+                    id="hs-basic-active-bordered-collapse-two"
+                    class="hs-accordion-content w-full overflow-hidden transition-[height] duration-300"
+                    aria-labelledby="hs-active-bordered-heading-two"
+                >
+                    <div class="pb-4 px-5">
+                        <p class="text-[#667085]">
+                            The founder of CONEX is a young developer who did
+                            this self-taught and ended up creating one of the
+                            most outstanding platforms in the working world of
+                            programmers.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div
+                class="hs-accordion hs-accordion-active:border-gray-200 bg-white border border-transparent rounded-xl"
+                id="hs-active-bordered-heading-three"
+            >
+                <button
+                    class="hs-accordion-toggle inline-flex justify-between items-center gap-x-3 w-full font-semibold text-start py-4 px-5 hover:text-gray-500 disabled:opacity-50 disabled:pointer-events-none dark:focus:outline-none text-[#80ED99]"
+                    aria-controls="hs-basic-active-bordered-collapse-three"
+                >
+                    Can I work for CONEX ?
+                    <svg
+                        class="hs-accordion-active:hidden block size-3.5"
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                    >
+                        <path d="M5 12h14"></path>
+                        <path d="M12 5v14"></path>
+                    </svg>
+                    <svg
+                        class="hs-accordion-active:block hidden size-3.5"
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                    >
+                        <path d="M5 12h14"></path>
+                    </svg>
+                </button>
+                <div
+                    id="hs-basic-active-bordered-collapse-three"
+                    class="hs-accordion-content hidden w-full overflow-hidden transition-[height] duration-300"
+                    aria-labelledby="hs-active-bordered-heading-three"
+                >
+                    <div class="pb-4 px-5">
+                        <p class="text-[#667085]">
+                            Yes, CONEX is constantly renewing its employees for
+                            the professional development of the website using
+                            the best tools on the market.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</Layout>
