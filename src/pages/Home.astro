@@ -1,8 +1,8 @@
 ---
 import { Image } from "astro:assets";
-import ImageConect from "../assets/img/img-conection.webp";
-import ImageBg from "../assets/img/img-hero.webp";
-import Star from "../assets/img/img-star.webp";
+import ImageConect from "../assets/img/estandar/img-conection.webp";
+import ImageBg from "../assets/img/estandar/img-hero.webp";
+import Star from "../assets/img/estandar/img-star.webp";
 ---
 
 <main class="flex mt-52 justify-center items-center z-10">
@@ -27,7 +27,11 @@ import Star from "../assets/img/img-star.webp";
             </div>
         </div>
     </div>
-    <Image src={ImageConect} alt="connection to recluiters and developers" class="flex -mt-20"/>
+    <Image
+        src={ImageConect}
+        alt="connection to recluiters and developers"
+        class="flex -mt-20"
+    />
     <Image
         src={ImageBg}
         alt="image background the main"
