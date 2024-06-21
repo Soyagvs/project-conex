@@ -1,0 +1,61 @@
+---
+import { Image } from "astro:assets";
+import avatar from "../assets/img/circles/Avatar.webp";
+import avatar1 from "../assets/img/circles/Avatar(1).webp";
+import avatar2 from "../assets/img/circles/Avatar(2).webp";
+import avatar3 from "../assets/img/circles/Avatar(3).webp";
+import avatar4 from "../assets/img/circles/Avatar(4).webp";
+import avatar5 from "../assets/img/circles/Avatar(5).webp";
+import avatar6 from "../assets/img/circles/Avatar(6).webp";
+import avatar7 from "../assets/img/circles/Avatar(7).webp";
+---
+
+<div class="grid grid-cols-4 gap-x-20 gap-y-20">
+    <div class="flex flex-col text-center items-center">
+        <Image src={avatar} alt="image to avatar" />
+        <p class="text-lg font-medium">Olivia Rhye</p>
+        <p class="text-[#7F56D9]">Founder & CEO</p>
+    </div>
+
+    <div class="flex flex-col text-center items-center">
+        <Image src={avatar1} alt="image to avatar" />
+        <p class="text-lg font-medium">Phoenix Baker</p>
+        <p class="text-[#7F56D9]">Engineering Manager</p>
+    </div>
+
+    <div class="flex flex-col text-center items-center">
+        <Image src={avatar2} alt="image to avatar" />
+        <p class="text-lg font-medium">Lana Steiner</p>
+        <p class="text-[#7F56D9]">Product Manager</p>
+    </div>
+
+    <div class="flex flex-col text-center items-center">
+        <Image src={avatar3} alt="image to avatar" />
+        <p class="text-lg font-medium">Demi Wilkinson</p>
+        <p class="text-[#7F56D9]">Frontend Developer</p>
+    </div>
+
+    <div class="flex flex-col text-center items-center">
+        <Image src={avatar4} alt="image to avatar" />
+        <p class="text-lg font-medium">Candice Wu</p>
+        <p class="text-[#7F56D9]">Backend Developer</p>
+    </div>
+
+    <div class="flex flex-col text-center items-center">
+        <Image src={avatar5} alt="image to avatar" />
+        <p class="text-lg font-medium">Natali Craig</p>
+        <p class="text-[#7F56D9]">Product Designer</p>
+    </div>
+
+    <div class="flex flex-col text-center items-center">
+        <Image src={avatar6} alt="image to avatar" />
+        <p class="text-lg font-medium">Drew Cano</p>
+        <p class="text-[#7F56D9]">UX Researcher</p>
+    </div>
+
+    <div class="flex flex-col text-center items-center">
+        <Image src={avatar7} alt="image to avatar" />
+        <p class="text-lg font-medium">Orlando Diggs</p>
+        <p class="text-[#7F56D9]">Customer Success</p>
+    </div>
+</div>
