@@ -1,0 +1,36 @@
+---
+import Layout from "../layouts/Layout.astro";
+import { Image } from "astro:assets";
+import bg from "../assets/img/estandar/404image.webp";
+import bg2 from "../assets/img/estandar/img-hero.webp";
+---
+
+<Layout title="404 Not Found">
+    <main class="flex items-center justify-center h-[60rem]">
+        <div class="flex justify-center items-center -space-x-20">
+            <div class="flex-col justify-center items-center">
+                <h2 class="text-[#7F56D9] -mb-5">404</h2>
+                <p class="text-4xl w-[400px]">
+                    It seems that we are missing something.
+                </p>
+                <button
+                    class="bg-[#57CC99] text-white rounded-2xl h-11 w-40 mt-3"
+                >
+                    <a href="/"> Go back to home </a>
+                </button>
+            </div>
+            <Image src={bg2} alt="image to bg2" />
+            <div class="flex justify-end items-center">
+                <Image src={bg} alt="image to bg" class="absolute" />
+            </div>
+        </div>
+    </main>
+</Layout>
+<style>
+    h2 {
+        font-size: 200px;
+    }
+    a {
+        height: 100px;
+    }
+</style>
