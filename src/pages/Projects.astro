@@ -1,10 +1,17 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import ProjectsCard from "../components/ProjectsCard.astro";
+import { Image } from "astro:assets";
+import bgImage from "../assets/img/estandar/img-hero-max.webp";
 ---
 
 <Layout title="Welcome to Projects">
-    <main class="flex flex-col justify-center items-center">
+    <main class="flex flex-col justify-center items-center h-[900px]">
+        <Image
+            src={bgImage}
+            alt="image the bsolute"
+            class="absolute -z-10 opacity-50 pt-20"
+        />
         <h3>Projects</h3>
         <h2>Frequently asked questions</h2>
         <p>Everything you need to know about the product and billing.</p>
