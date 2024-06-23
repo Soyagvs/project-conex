@@ -1,0 +1,17 @@
+---
+import Layout from "../layouts/Layout.astro";
+import ProjectsCard from "../components/ProjectsCard.astro";
+---
+
+<Layout title="Welcome to Projects">
+    <main class="flex flex-col justify-center items-center">
+        <h3>Projects</h3>
+        <h2>Frequently asked questions</h2>
+        <p>Everything you need to know about the product and billing.</p>
+        <div class="grid grid-cols-3 justify-center items-center gap-5">
+            <ProjectsCard />
+            <ProjectsCard />
+            <ProjectsCard />
+        </div>
+    </main>
+</Layout>
