@@ -3,6 +3,9 @@ import { Image } from "astro:assets";
 import ImageConect from "../assets/img/estandar/img-conection.webp";
 import ImageBg from "../assets/img/estandar/img-hero.webp";
 import Star from "../assets/img/estandar/img-star.webp";
+import { getSession } from "auth-astro/server";
+
+const session = await getSession(Astro.request);
 ---
 
 <main class="flex justify-center items-center -z-10 h-[900px]">
@@ -19,6 +22,15 @@ import Star from "../assets/img/estandar/img-star.webp";
             process, ensuring you find the perfect talent for every
             technological challenge.
         </p>
+        <button id="login">Iniciar sesión</button>
+        <button id="logout">Cerrar sesión</button>
+        {
+            session ? (
+                <p>Bienvenido {session.user?.name}</p>
+            ) : (
+                <p>No ha iniciado sesión</p>
+            )
+        }
         <div class="pt-10">
             <p class="text-[#7F56D9]">Trusted by 50k+ users</p>
             <div class="flex text-[#71717A]">
@@ -34,3 +46,12 @@ import Star from "../assets/img/estandar/img-star.webp";
         class="absolute ml-[600px] -z-10 opacity-50"
     />
 </main>
+<script>
+    const { signIn, signOut } = await import("auth-astro/client");
+
+    const loginButton = document.querySelector("#login");
+    loginButton?.addEventListener("click", () => signIn("github"));
+
+    const logoutButton = document.querySelector("#logout");
+    logoutButton?.addEventListener("click", () => signOut());
+</script>
