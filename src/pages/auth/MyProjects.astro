@@ -1,0 +1,35 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import ProjectsCardAuth from "../../components/auth/ProjectsCardAuth.astro";
+---
+
+<Layout title="Welcome to Settings">
+    <main class="flex justify-center items-start h-[900px]">
+        <div class="flex flex-col mt-14 justify-center items-center">
+            <div class="flex justify-center items-center gap-x-9">
+                <div class="w-20 flex justify-start items-center border">
+                    <p>image</p>
+                </div>
+                <div class="w-36 flex justify-start items-center border">
+                    <p>name</p>
+                </div>
+                <div class="w-36 flex justify-start items-center border">
+                    <p>role</p>
+                </div>
+                <div class="w-52 flex justify-start items-center border">
+                    <p>Email</p>
+                </div>
+                <div class="w-60 flex justify-start items-center border">
+                    <p>Tags</p>
+                </div>
+                <div class="w-28 flex justify-start items-center border">
+                    <p>edits</p>
+                </div>
+            </div>
+            <div class="grid gap-y-3 mt-20">
+                <ProjectsCardAuth />
+                <ProjectsCardAuth />
+            </div>
+        </div>
+    </main>
+</Layout>
