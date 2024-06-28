@@ -1,8 +1,5 @@
 ---
 import Layout404 from "../layouts/Layout404.astro";
-import { Image } from "astro:assets";
-import bg from "../assets/img/estandar/404image.webp";
-import bg2 from "../assets/img/estandar/img-hero.webp";
 ---
 
 <Layout404 title="404 Not Found">
@@ -19,9 +16,20 @@ import bg2 from "../assets/img/estandar/img-hero.webp";
                     <a href="/"> Go back to home </a>
                 </button>
             </div>
-            <Image src={bg2} alt="image to bg2" />
+            <img
+                src="/img/globals/img-hero.webp"
+                alt="image to bg2"
+                decoding="async"
+                loading="lazy"
+            />
             <div class="flex justify-end items-center">
-                <Image src={bg} alt="image to bg" class="absolute" />
+                <img
+                    src="/img/globals/404image.webp"
+                    alt="image to bg"
+                    class="absolute"
+                    decoding="async"
+                    loading="lazy"
+                />
             </div>
         </div>
     </main>

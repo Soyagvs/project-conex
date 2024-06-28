@@ -1,11 +1,14 @@
 ---
-import { Image } from "astro:assets";
-import imgcard from "../assets/img/estandar/img-card.webp";
 import Like from "../icons/Like.astro";
 ---
 
 <div class="rounded-lg">
-    <Image src={imgcard} alt="image to card" />
+    <img
+        src="/img/globals/img-card.webp"
+        alt="image to card"
+        decoding="async"
+        loading="lazy"
+    />
     <div class="flex flex-col w-80 bg-white rounded-lg p-3">
         <div
             class="flex justify-center items-center gap-3 text-[#667085] mt-3 mb-3"

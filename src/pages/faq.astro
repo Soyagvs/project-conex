@@ -1,15 +1,15 @@
 ---
-import { Image } from "astro:assets";
 import Layout from "../layouts/Layout.astro";
-import bgImage from "../assets/img/estandar/img-hero-max.webp";
 ---
 
 <Layout title="Welcome to FAQ">
     <main class="flex flex-col justify-center z-10 items-center h-[900px]">
-        <Image
-            src={bgImage}
+        <img
+            src="/img/globals/img-hero-max.webp"
             alt="image the bsolute"
             class="absolute -z-10 opacity-50 pt-20"
+            decoding="async"
+            loading="lazy"
         />
 
         <div class="text-center space-y-4">

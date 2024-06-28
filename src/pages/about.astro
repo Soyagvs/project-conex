@@ -1,16 +1,16 @@
 ---
-import { Image } from "astro:assets";
 import UserCircleCard from "../components/UserCircleCard.astro";
-import bgAbout from "../assets/img/estandar/img-hero-max.webp";
 import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout title="Welcome to About">
     <main class="flex flex-col justify-center z-10 items-center h-[900px]">
-        <Image
-            src={bgAbout}
+        <img
+            src="/img/globals/img-hero-max.webp"
             alt="image the bsolute"
             class="absolute -z-10 opacity-50"
+            decoding="async"
+            loading="lazy"
         />
 
         <div class="text-center space-y-4">

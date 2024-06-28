@@ -1,9 +1,5 @@
 ---
 import Layout from "../../layouts/Layout.astro";
-import { Image } from "astro:assets";
-import ImgMax from "../../assets/img/estandar/img-profile.webp";
-import ImgMax2 from "../../assets/img/estandar/img-profile2.webp";
-
 import Papelera from "../../icons/Papelera.astro";
 import Pencil from "../../icons/Pencil.astro";
 ---
@@ -13,31 +9,39 @@ import Pencil from "../../icons/Pencil.astro";
         <div class="flex justify-center gap-5 mr-40">
             <div class="flex gap-5">
                 <div class="flex flex-col gap-3" id="thumbnails">
-                    <Image
-                        src={ImgMax}
+                    <img
+                        src="/img/globals/img-profile.webp"
                         alt="image to profile"
                         class="w-40 h-20 cursor-pointer hover:border-[#7F56D9] hover:border"
+                        decoding="async"
+                        loading="lazy"
                     />
-                    <Image
-                        src={ImgMax2}
+                    <img
+                        src="/img/globals/img-profile2.webp"
                         alt="image to profile"
                         class="w-40 h-20 cursor-pointer hover:border-[#7F56D9] hover:border"
+                        decoding="async"
+                        loading="lazy"
                     />
-                    <Image
-                        src={ImgMax}
+                    <img
+                        src="/img/globals/img-profile.webp"
                         alt="image to profile"
                         class="w-40 h-20 cursor-pointer hover:border-[#7F56D9] hover:border"
+                        decoding="async"
+                        loading="lazy"
                     />
                 </div>
                 <div
                     class="w-[550px] h-[450px] border-[#7F56D9] border rounded-lg flex justify-center items-center p-5"
                 >
                     <div id="image-container">
-                        <Image
+                        <img
                             id="selectedImage"
-                            src={ImgMax}
+                            src='/img/globals/img-profile2.webp"'
                             alt="image to profile"
                             class="w-full h-auto"
+                            decoding="async"
+                            loading="lazy"
                         />
                     </div>
                 </div>
@@ -67,21 +71,20 @@ import Pencil from "../../icons/Pencil.astro";
             <Pencil />
         </div>
     </main>
+</Layout>
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+        const thumbnails = document.querySelectorAll("#thumbnails img");
+        const selectedImage =
+            document.querySelector<HTMLImageElement>("#selectedImage");
 
-    <script>
-        document.addEventListener("DOMContentLoaded", () => {
-            const thumbnails = document.querySelectorAll("#thumbnails img");
-            const selectedImage =
-                document.querySelector<HTMLImageElement>("#selectedImage");
-
-            thumbnails.forEach((thumbnail) => {
-                thumbnail.addEventListener("click", (e) => {
-                    const clickedImage = e.target as HTMLImageElement;
-                    if (selectedImage) {
-                        selectedImage.src = clickedImage.src;
-                    }
-                });
+        thumbnails.forEach((thumbnail) => {
+            thumbnail.addEventListener("click", (e) => {
+                const clickedImage = e.target as HTMLImageElement;
+                if (selectedImage) {
+                    selectedImage.src = clickedImage.src;
+                }
             });
         });
-    </script>
-</Layout>
+    });
+</script>
