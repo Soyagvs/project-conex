@@ -1,0 +1,30 @@
+---
+import LayoutAuth from "../layouts/LayoutAuth.astro";
+import AuthButton from "../components/auth/github/AuthButton.astro";
+---
+
+<LayoutAuth title="CONEX | Login">
+    <main class="flex justify-center items-center mt-10">
+        <div class="flex justify-center items-center gap-20">
+            <div>
+                <img
+                    src="/img/globals/img-sesion.webp"
+                    alt="imate to auth"
+                    decoding="async"
+                    loading="lazy"
+                />
+            </div>
+            <div class="flex flex-col gap-14">
+                <div class="flex flex-col gap-5">
+                    <h1 class="text-[#7F56D9] text-5xl font-bold">
+                        Welcome back 👋
+                    </h1>
+                    <p class="text-[#6B7280] w-96">
+                        You can log in with one of these platforms .
+                    </p>
+                </div>
+                <AuthButton />
+            </div>
+        </div>
+    </main>
+</LayoutAuth>
