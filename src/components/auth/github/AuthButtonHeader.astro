@@ -1,0 +1,7 @@
+---
+import { getSession } from "auth-astro/server";
+import AuthModalLinksHeader from "./AuthModalLinksHeader";
+const session = await getSession(Astro.request);
+---
+
+<AuthModalLinksHeader session={session} client:load />
