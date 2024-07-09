@@ -2,7 +2,6 @@ import { defineConfig } from 'astro/config';
 import tailwind from "@astrojs/tailwind";
 import auth from "auth-astro";
 import node from '@astrojs/node'; // Importa el adaptador de Node.js
-
 import preact from "@astrojs/preact";
 
 // https://astro.build/config
