@@ -4,7 +4,9 @@ import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout title="Welcome to About">
-    <main class="flex flex-col justify-center z-10 items-center h-[900px]">
+    <main
+        class="flex flex-col justify-center z-10 items-center h-[900px] max-sm:mx-10"
+    >
         <img
             src="/img/globals/img-hero-max.webp"
             alt="image the bsolute"
@@ -13,7 +15,7 @@ import Layout from "../layouts/Layout.astro";
             loading="lazy"
         />
 
-        <div class="text-center space-y-4">
+        <div class="text-center space-y-4 max-sm:mt-28">
             <p class="text-[#80ED99] -mt-36">We re hiring!</p>
             <h2 class="font-semibold text-4xl text-[#001D3D]">About Us</h2>
             <p class="text-[#667085] max-sm:text-center">
@@ -21,7 +23,7 @@ import Layout from "../layouts/Layout.astro";
                 innovative recruiters.
             </p>
         </div>
-        <div class="flex justify-center items-center mt-36">
+        <div class="flex justify-center items-center mt-36 max-sm:mt-10">
             <UserCircleCard />
         </div>
     </main>

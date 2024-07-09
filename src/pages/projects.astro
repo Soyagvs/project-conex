@@ -4,7 +4,9 @@ import ProjectsCard from "../components/ProjectsCard.astro";
 ---
 
 <Layout title="Welcome to Projects">
-    <main class="flex flex-col justify-center items-center h-[900px]">
+    <main
+        class="flex flex-col justify-center items-center h-[900px] max-sm:h-auto max-sm:mt-36 max-sm:mb-10"
+    >
         <img
             src="/img/globals/img-hero-max.webp"
             alt="image the bsolute"
@@ -21,7 +23,9 @@ import ProjectsCard from "../components/ProjectsCard.astro";
                 Here you will see the projects in weekly trends.
             </p>
         </div>
-        <div class="grid grid-cols-3 justify-center items-center gap-5 pt-20">
+        <div
+            class="grid grid-cols-3 max-sm:grid-cols-1 justify-center items-center gap-5 pt-20"
+        >
             <ProjectsCard />
             <ProjectsCard />
             <ProjectsCard />
